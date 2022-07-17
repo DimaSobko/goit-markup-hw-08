@@ -1,0 +1,88 @@
+.page-header {
+  background-color: var(--primary-background-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__container {
+  @include flexed();
+}
+
+.nav {
+  @include flexed();
+  margin: 0 auto 0 0;
+
+  &__list {
+    @extend %list-style;
+    @include flexed();
+  }
+
+  &__item {
+    margin: 0 50px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    @extend %link-style;
+    display: block;
+    @include basic-set-of-font-styles();
+    @include transition();
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-color-interactive-elements);
+    }
+
+    &--current {
+      position: relative;
+      color: var(--secondary-color-interactive-elements);
+    }
+
+    &--current::after {
+      display: block;
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--secondary-color-interactive-elements);
+    }
+  }
+}
+
+.nav-contacts {
+  @extend %list-style;
+  @include flexed();
+
+  &__item {
+    color: var(--additional-font-color);
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    @extend %link-style;
+    @include flexed();
+    @include basic-set-of-font-styles();
+    @include transition();
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-color-interactive-elements);
+    }
+  }
+
+  &__icon {
+    display: block;
+    fill: currentColor;
+    margin: 0 10px 0 0;
+  }
+}
