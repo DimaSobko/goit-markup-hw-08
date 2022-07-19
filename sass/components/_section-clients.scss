@@ -1,8 +1,8 @@
 .clients {
-  padding: 94px 0 94px 0;
+  padding: 60px 0 60px 0;
 
   &__title {
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
@@ -10,16 +10,25 @@
   }
 
   &__list {
+    @include flexed();
+    flex-wrap: wrap;
     @extend %list-style;
-    @include flexed($justify: space-between);
+    margin: -15px;
   }
 
   &__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
+    @include flexed();
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
     height: 92px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__link {

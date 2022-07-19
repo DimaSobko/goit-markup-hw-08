@@ -27,36 +27,78 @@
           <a class="logo" href="./index.html">
             <span class="logo__text">Web</span>Studio</a
           >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
+          <button type="button" class="burger btn-open">
+            <svg class="burger-btn__icon" width="40" height="40">
+              <use
+                class="burger-btn__icon-menu"
+                href="./images/icons.svg#menu-open"
+              ></use>
+            </svg>
+          </button>
+          <div class="nav__components">
+            <button type="button" class="burger btn-close">
+              <svg width="40" height="40">
+                <use
+                  class="burger-btn__icon-menu"
+                  href="./images/icons.svg#menu-close"
+                ></use>
+              </svg>
+            </button>
+            <div class="box">
+              <div class="box-item">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="./index.html">Студия</a>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__link nav__link--current"
+                      href="./portfolio.html"
+                      >Портфолио</a
+                    >
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="box-item">
+                <ul class="nav-contacts">
+                  <li class="nav-contacts__item">
+                    <a class="nav-contacts__link" href="tel:+380961111111"
+                      ><svg class="nav-contacts__icon" width="10" height="16">
+                        <use href="./images/icons.svg#smartphone"></use></svg
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="nav-contacts__item">
+                    <a
+                      class="nav-contacts__link"
+                      href="mailto:info@devstudio.com"
+                      ><svg class="nav-contacts__icon" width="16" height="12">
+                        <use href="./images/icons.svg#envelope"></use></svg
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                </ul>
+                <ul class="nav__social-list">
+                  <li class="nav__social-item">
+                    <a href="#" class="nav__social-link">instagram</a>
+                  </li>
+                  <li class="nav__social-item">
+                    <a href="#" class="nav__social-link">twitter</a>
+                  </li>
+                  <li class="nav__social-item">
+                    <a href="#" class="nav__social-link">facebook</a>
+                  </li>
+                  <li class="nav__social-item">
+                    <a href="#" class="nav__social-link">linkedin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
-        <ul class="nav-contacts">
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="mailto:info@devstudio.com"
-              ><svg class="nav-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="tel:+380961111111"
-              ><svg class="nav-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <main>
@@ -68,16 +110,24 @@
               <button class="product-navigation__btn" type="button">Все</button>
             </li>
             <li class="product-navigation__item">
-              <button class="product-navigation__btn" type="button">Веб-сайты</button>
+              <button class="product-navigation__btn" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="product-navigation__item">
-              <button class="product-navigation__btn" type="button">Приложения</button>
+              <button class="product-navigation__btn" type="button">
+                Приложения
+              </button>
             </li>
             <li class="product-navigation__item">
-              <button class="product-navigation__btn" type="button">Дизайн</button>
+              <button class="product-navigation__btn" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="product-navigation__item">
-              <button class="product-navigation__btn" type="button">Маркетинг</button>
+              <button class="product-navigation__btn" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <h1 hidden>карточки товара</h1>
@@ -85,7 +135,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/technokryak.jpg" alt="веб-сайт" />
+                  <img
+                    class="picture"
+                    src="./images/technokryak.jpg"
+                    alt="веб-сайт"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -104,7 +158,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/new-orlean.jpg" alt="дизайн" />
+                  <img
+                    class="picture"
+                    src="./images/new-orlean.jpg"
+                    alt="дизайн"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -125,7 +183,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/seafood.jpg" alt="приложение" />
+                  <img
+                    class="picture"
+                    src="./images/seafood.jpg"
+                    alt="приложение"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -144,7 +206,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/project-prime.jpg" alt="маркетинг" />
+                  <img
+                    class="picture"
+                    src="./images/project-prime.jpg"
+                    alt="маркетинг"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -163,7 +229,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/project-boxes.jpg" alt="приложение" />
+                  <img
+                    class="picture"
+                    src="./images/project-boxes.jpg"
+                    alt="приложение"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -182,7 +252,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/no-borders.jpg" alt="веб-сайт" />
+                  <img
+                    class="picture"
+                    src="./images/no-borders.jpg"
+                    alt="веб-сайт"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -203,7 +277,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/limited-edition.jpg" alt="дизайн" />
+                  <img
+                    class="picture"
+                    src="./images/limited-edition.jpg"
+                    alt="дизайн"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -214,7 +292,9 @@
                   </div>
                 </div>
                 <div class="card-set__benefits">
-                  <h3 class="card-set__title" lang="en">Издание Limited Edition</h3>
+                  <h3 class="card-set__title" lang="en">
+                    Издание Limited Edition
+                  </h3>
                   <p class="card-set__desc">дизайн</p>
                 </div>
               </a>
@@ -222,7 +302,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/project-lab.jpg" alt="маркетинг" />
+                  <img
+                    class="picture"
+                    src="./images/project-lab.jpg"
+                    alt="маркетинг"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -241,7 +325,11 @@
             <li class="card-set__item">
               <a class="card-set__link" href="#">
                 <div class="card-set__overlay">
-                  <img class="picture" src="./images/growing-business.jpg" alt="приложение" />
+                  <img
+                    class="picture"
+                    src="./images/growing-business.jpg"
+                    alt="приложение"
+                  />
                   <div class="card-set__meta">
                     <p class="card-set__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -265,35 +353,35 @@
       <div class="container">
         <ul class="footer-list-grid">
           <li class="footer-list-grid__item">
-            <a
-              class="logo page-footer__logo logo--color-white"
-              href="./index.html"
-              ><span class="logo__text">Web</span>Studio</a
-            >
-            <address>
-              <ul class="contact-inform">
-                <li class="contact-inform__item">
-                  <a class="contact-inform__link" href="#"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
-                </li>
-                <li class="contact-inform__item">
-                  <a
-                    class="contact-inform__link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li class="contact-inform__item">
-                  <a class="contact-inform__link" href="tel:+380961111111"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </li>
-          <li class="footer-list-grid__item">
-            <div>
+            <div class="footer-list-grid__box">
+              <a
+                class="logo page-footer__logo logo--color-white"
+                href="./index.html"
+                ><span class="logo__text">Web</span>Studio</a
+              >
+              <address>
+                <ul class="contact-inform">
+                  <li class="contact-inform__item">
+                    <a class="contact-inform__link" href="#"
+                      >г. Киев, пр-т Леси Украинки, 26</a
+                    >
+                  </li>
+                  <li class="contact-inform__item">
+                    <a
+                      class="contact-inform__link"
+                      href="mailto:info@devstudio.com"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="contact-inform__item">
+                    <a class="contact-inform__link" href="tel:+380961111111"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-list-grid__box">
               <div class="social-cell">Присоединяйтесь</div>
               <ul class="social">
                 <li class="social__box">
@@ -353,5 +441,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
